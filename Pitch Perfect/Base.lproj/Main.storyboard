@@ -9,7 +9,7 @@
         <!--Record-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -39,7 +39,6 @@
                                 <state key="normal" image="ImageButton"/>
                                 <connections>
                                     <action selector="stopRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLC-vs-TrI"/>
-                                    <segue destination="Cgk-DD-6sK" kind="show" id="euM-PT-g8Z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -88,6 +87,7 @@
                         <outlet property="recordButton" destination="Uej-mh-uzc" id="udB-Fv-i2L"/>
                         <outlet property="recordingInProgress" destination="dm8-3g-1n8" id="YPx-xF-g9C"/>
                         <outlet property="recordingStop" destination="G1f-Ci-ieF" id="kMM-DL-miV"/>
+                        <segue destination="Cgk-DD-6sK" kind="show" identifier="stopRecording" id="TnY-Lg-hfa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,28 +115,64 @@
                                     <action selector="playSlowAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="c7n-sz-c45"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY9-rP-aTF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="ImageButton"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="148" y="467" width="104" height="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="stopAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="zSJ-RK-6yJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trz-ns-0xk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="imageFast"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="214" y="124" width="154" height="100"/>
+                                </variation>
+                                <connections>
+                                    <action selector="playFastAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="dr6-eV-9aM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Trz-ns-0xk" firstAttribute="top" secondItem="u48-Eh-dRN" secondAttribute="bottom" constant="60" id="1vB-2B-6D7"/>
+                            <constraint firstItem="TY9-rP-aTF" firstAttribute="centerX" secondItem="twQ-u7-rsD" secondAttribute="centerX" id="5lJ-vU-g6q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Trz-ns-0xk" secondAttribute="trailing" constant="20" id="O5J-dv-58X"/>
                             <constraint firstItem="pLP-g8-rp1" firstAttribute="top" secondItem="u48-Eh-dRN" secondAttribute="bottom" constant="60" id="X63-kK-X65"/>
-                            <constraint firstItem="pLP-g8-rp1" firstAttribute="leading" secondItem="twQ-u7-rsD" secondAttribute="leadingMargin" constant="17" id="nwo-cJ-m0a"/>
+                            <constraint firstItem="TY9-rP-aTF" firstAttribute="top" secondItem="u48-Eh-dRN" secondAttribute="bottom" constant="403" id="k3w-6L-ljB"/>
+                            <constraint firstItem="pLP-g8-rp1" firstAttribute="leading" secondItem="twQ-u7-rsD" secondAttribute="leadingMargin" constant="20" id="nwo-cJ-m0a"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pLP-g8-rp1"/>
+                                <exclude reference="TY9-rP-aTF"/>
+                                <exclude reference="Trz-ns-0xk"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="X63-kK-X65"/>
                                 <exclude reference="nwo-cJ-m0a"/>
+                                <exclude reference="1vB-2B-6D7"/>
+                                <exclude reference="O5J-dv-58X"/>
+                                <exclude reference="5lJ-vU-g6q"/>
+                                <exclude reference="k3w-6L-ljB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pLP-g8-rp1"/>
+                                <include reference="TY9-rP-aTF"/>
+                                <include reference="Trz-ns-0xk"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="X63-kK-X65"/>
                                 <include reference="nwo-cJ-m0a"/>
+                                <include reference="1vB-2B-6D7"/>
+                                <include reference="O5J-dv-58X"/>
+                                <include reference="5lJ-vU-g6q"/>
+                                <include reference="k3w-6L-ljB"/>
                             </mask>
                         </variation>
                     </view>
@@ -167,6 +203,7 @@
     <resources>
         <image name="Image" width="100" height="100"/>
         <image name="ImageButton" width="50" height="50"/>
+        <image name="imageFast" width="100" height="100"/>
         <image name="imageSlow" width="100" height="100"/>
     </resources>
 </document>
