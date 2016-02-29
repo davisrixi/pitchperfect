@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,9 +22,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uej-mh-uzc">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Image"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="151" y="250" width="100" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GQC-Ga-5NG"/>
                                 </connections>
@@ -58,12 +56,12 @@
                                 <exclude reference="G1f-Ci-ieF"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Gyf-3V-cOj"/>
+                                <exclude reference="vYE-Pb-WXq"/>
                                 <exclude reference="0Cu-v4-t7C"/>
                                 <exclude reference="r3q-lG-5Jw"/>
                                 <exclude reference="dlu-IO-pZG"/>
                                 <exclude reference="vJP-C3-MOB"/>
-                                <exclude reference="Gyf-3V-cOj"/>
-                                <exclude reference="vYE-Pb-WXq"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -73,12 +71,12 @@
                                 <include reference="G1f-Ci-ieF"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Gyf-3V-cOj"/>
+                                <include reference="vYE-Pb-WXq"/>
                                 <include reference="0Cu-v4-t7C"/>
                                 <include reference="r3q-lG-5Jw"/>
                                 <include reference="dlu-IO-pZG"/>
                                 <include reference="vJP-C3-MOB"/>
-                                <include reference="Gyf-3V-cOj"/>
-                                <include reference="vYE-Pb-WXq"/>
                             </mask>
                         </variation>
                     </view>
@@ -103,24 +101,12 @@
                         <viewControllerLayoutGuide type="bottom" id="Wy7-Hk-ASS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="twQ-u7-rsD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLP-g8-rp1">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="imageSlow"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="37" y="124" width="154" height="100"/>
-                                </variation>
-                                <connections>
-                                    <action selector="playSlowAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="c7n-sz-c45"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY9-rP-aTF">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="ImageButton"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="148" y="467" width="104" height="50"/>
-                                </variation>
                                 <connections>
                                     <action selector="stopAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="zSJ-RK-6yJ"/>
                                 </connections>
@@ -128,11 +114,15 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trz-ns-0xk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="imageFast"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="214" y="124" width="154" height="100"/>
-                                </variation>
                                 <connections>
                                     <action selector="playFastAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="dr6-eV-9aM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLP-g8-rp1">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="imageSlow"/>
+                                <connections>
+                                    <action selector="playSlowAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="c7n-sz-c45"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -147,32 +137,32 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="pLP-g8-rp1"/>
                                 <exclude reference="TY9-rP-aTF"/>
                                 <exclude reference="Trz-ns-0xk"/>
+                                <exclude reference="pLP-g8-rp1"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="X63-kK-X65"/>
-                                <exclude reference="nwo-cJ-m0a"/>
-                                <exclude reference="1vB-2B-6D7"/>
-                                <exclude reference="O5J-dv-58X"/>
                                 <exclude reference="5lJ-vU-g6q"/>
                                 <exclude reference="k3w-6L-ljB"/>
+                                <exclude reference="1vB-2B-6D7"/>
+                                <exclude reference="O5J-dv-58X"/>
+                                <exclude reference="X63-kK-X65"/>
+                                <exclude reference="nwo-cJ-m0a"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="pLP-g8-rp1"/>
                                 <include reference="TY9-rP-aTF"/>
                                 <include reference="Trz-ns-0xk"/>
+                                <include reference="pLP-g8-rp1"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="X63-kK-X65"/>
-                                <include reference="nwo-cJ-m0a"/>
-                                <include reference="1vB-2B-6D7"/>
-                                <include reference="O5J-dv-58X"/>
                                 <include reference="5lJ-vU-g6q"/>
                                 <include reference="k3w-6L-ljB"/>
+                                <include reference="1vB-2B-6D7"/>
+                                <include reference="O5J-dv-58X"/>
+                                <include reference="X63-kK-X65"/>
+                                <include reference="nwo-cJ-m0a"/>
                             </mask>
                         </variation>
                     </view>
