@@ -40,7 +40,8 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Uej-mh-uzc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Cu-v4-t7C"/>
                             <constraint firstItem="G1f-Ci-ieF" firstAttribute="top" secondItem="Uej-mh-uzc" secondAttribute="bottom" constant="149" id="Gyf-3V-cOj"/>
@@ -125,11 +126,29 @@
                                     <action selector="playSlowAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="c7n-sz-c45"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3h-NV-vmU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="chipmunkButton"/>
+                                <connections>
+                                    <action selector="playChipmunk:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="rnq-Jf-HXT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hc-Ux-AxN">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="darthVaderButton"/>
+                                <connections>
+                                    <action selector="playDarthVader:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="XJk-GK-4Y1"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Trz-ns-0xk" firstAttribute="top" secondItem="u48-Eh-dRN" secondAttribute="bottom" constant="60" id="1vB-2B-6D7"/>
                             <constraint firstItem="TY9-rP-aTF" firstAttribute="centerX" secondItem="twQ-u7-rsD" secondAttribute="centerX" id="5lJ-vU-g6q"/>
+                            <constraint firstItem="x3h-NV-vmU" firstAttribute="top" secondItem="pLP-g8-rp1" secondAttribute="bottom" constant="77" id="DuJ-Xa-WT7"/>
+                            <constraint firstItem="3hc-Ux-AxN" firstAttribute="top" secondItem="Trz-ns-0xk" secondAttribute="bottom" constant="77" id="KV6-Pg-LlR"/>
+                            <constraint firstItem="x3h-NV-vmU" firstAttribute="leading" secondItem="twQ-u7-rsD" secondAttribute="leadingMargin" constant="20" id="L48-dW-fGv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3hc-Ux-AxN" secondAttribute="trailing" constant="20" id="Lz8-01-HXB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Trz-ns-0xk" secondAttribute="trailing" constant="20" id="O5J-dv-58X"/>
                             <constraint firstItem="pLP-g8-rp1" firstAttribute="top" secondItem="u48-Eh-dRN" secondAttribute="bottom" constant="60" id="X63-kK-X65"/>
                             <constraint firstItem="TY9-rP-aTF" firstAttribute="top" secondItem="u48-Eh-dRN" secondAttribute="bottom" constant="403" id="k3w-6L-ljB"/>
@@ -140,14 +159,20 @@
                                 <exclude reference="TY9-rP-aTF"/>
                                 <exclude reference="Trz-ns-0xk"/>
                                 <exclude reference="pLP-g8-rp1"/>
+                                <exclude reference="x3h-NV-vmU"/>
+                                <exclude reference="3hc-Ux-AxN"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5lJ-vU-g6q"/>
-                                <exclude reference="k3w-6L-ljB"/>
-                                <exclude reference="1vB-2B-6D7"/>
-                                <exclude reference="O5J-dv-58X"/>
                                 <exclude reference="X63-kK-X65"/>
                                 <exclude reference="nwo-cJ-m0a"/>
+                                <exclude reference="1vB-2B-6D7"/>
+                                <exclude reference="O5J-dv-58X"/>
+                                <exclude reference="DuJ-Xa-WT7"/>
+                                <exclude reference="L48-dW-fGv"/>
+                                <exclude reference="KV6-Pg-LlR"/>
+                                <exclude reference="Lz8-01-HXB"/>
+                                <exclude reference="5lJ-vU-g6q"/>
+                                <exclude reference="k3w-6L-ljB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -155,14 +180,20 @@
                                 <include reference="TY9-rP-aTF"/>
                                 <include reference="Trz-ns-0xk"/>
                                 <include reference="pLP-g8-rp1"/>
+                                <include reference="x3h-NV-vmU"/>
+                                <include reference="3hc-Ux-AxN"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5lJ-vU-g6q"/>
-                                <include reference="k3w-6L-ljB"/>
-                                <include reference="1vB-2B-6D7"/>
-                                <include reference="O5J-dv-58X"/>
                                 <include reference="X63-kK-X65"/>
                                 <include reference="nwo-cJ-m0a"/>
+                                <include reference="1vB-2B-6D7"/>
+                                <include reference="O5J-dv-58X"/>
+                                <include reference="DuJ-Xa-WT7"/>
+                                <include reference="L48-dW-fGv"/>
+                                <include reference="KV6-Pg-LlR"/>
+                                <include reference="Lz8-01-HXB"/>
+                                <include reference="5lJ-vU-g6q"/>
+                                <include reference="k3w-6L-ljB"/>
                             </mask>
                         </variation>
                     </view>
@@ -193,6 +224,8 @@
     <resources>
         <image name="Image" width="100" height="100"/>
         <image name="ImageButton" width="50" height="50"/>
+        <image name="chipmunkButton" width="100" height="100"/>
+        <image name="darthVaderButton" width="100" height="100"/>
         <image name="imageFast" width="100" height="100"/>
         <image name="imageSlow" width="100" height="100"/>
     </resources>
