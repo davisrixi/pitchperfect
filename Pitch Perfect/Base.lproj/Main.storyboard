@@ -26,12 +26,6 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GQC-Ga-5NG"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm8-3g-1n8">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
-                                <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1f-Ci-ieF">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="ImageButton"/>
@@ -39,6 +33,12 @@
                                     <action selector="stopRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VLC-vs-TrI"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm8-3g-1n8">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -53,8 +53,8 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Uej-mh-uzc"/>
-                                <exclude reference="dm8-3g-1n8"/>
                                 <exclude reference="G1f-Ci-ieF"/>
+                                <exclude reference="dm8-3g-1n8"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Gyf-3V-cOj"/>
@@ -68,8 +68,8 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Uej-mh-uzc"/>
-                                <include reference="dm8-3g-1n8"/>
                                 <include reference="G1f-Ci-ieF"/>
+                                <include reference="dm8-3g-1n8"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Gyf-3V-cOj"/>
@@ -105,13 +105,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY9-rP-aTF">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="ImageButton"/>
-                                <connections>
-                                    <action selector="stopAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="zSJ-RK-6yJ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trz-ns-0xk">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="imageFast"/>
@@ -140,6 +133,13 @@
                                     <action selector="playDarthVader:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="XJk-GK-4Y1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY9-rP-aTF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="ImageButton"/>
+                                <connections>
+                                    <action selector="stopAudio:" destination="Cgk-DD-6sK" eventType="touchUpInside" id="zSJ-RK-6yJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -156,11 +156,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="TY9-rP-aTF"/>
                                 <exclude reference="Trz-ns-0xk"/>
                                 <exclude reference="pLP-g8-rp1"/>
                                 <exclude reference="x3h-NV-vmU"/>
                                 <exclude reference="3hc-Ux-AxN"/>
+                                <exclude reference="TY9-rP-aTF"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="X63-kK-X65"/>
@@ -177,11 +177,11 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="TY9-rP-aTF"/>
                                 <include reference="Trz-ns-0xk"/>
                                 <include reference="pLP-g8-rp1"/>
                                 <include reference="x3h-NV-vmU"/>
                                 <include reference="3hc-Ux-AxN"/>
+                                <include reference="TY9-rP-aTF"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="X63-kK-X65"/>
