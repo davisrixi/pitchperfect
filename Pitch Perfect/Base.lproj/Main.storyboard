@@ -163,16 +163,16 @@
                                 <exclude reference="TY9-rP-aTF"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="X63-kK-X65"/>
-                                <exclude reference="nwo-cJ-m0a"/>
-                                <exclude reference="1vB-2B-6D7"/>
-                                <exclude reference="O5J-dv-58X"/>
-                                <exclude reference="DuJ-Xa-WT7"/>
-                                <exclude reference="L48-dW-fGv"/>
                                 <exclude reference="KV6-Pg-LlR"/>
                                 <exclude reference="Lz8-01-HXB"/>
                                 <exclude reference="5lJ-vU-g6q"/>
                                 <exclude reference="k3w-6L-ljB"/>
+                                <exclude reference="1vB-2B-6D7"/>
+                                <exclude reference="O5J-dv-58X"/>
+                                <exclude reference="X63-kK-X65"/>
+                                <exclude reference="nwo-cJ-m0a"/>
+                                <exclude reference="DuJ-Xa-WT7"/>
+                                <exclude reference="L48-dW-fGv"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -184,16 +184,16 @@
                                 <include reference="TY9-rP-aTF"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="X63-kK-X65"/>
-                                <include reference="nwo-cJ-m0a"/>
-                                <include reference="1vB-2B-6D7"/>
-                                <include reference="O5J-dv-58X"/>
-                                <include reference="DuJ-Xa-WT7"/>
-                                <include reference="L48-dW-fGv"/>
                                 <include reference="KV6-Pg-LlR"/>
                                 <include reference="Lz8-01-HXB"/>
                                 <include reference="5lJ-vU-g6q"/>
                                 <include reference="k3w-6L-ljB"/>
+                                <include reference="1vB-2B-6D7"/>
+                                <include reference="O5J-dv-58X"/>
+                                <include reference="X63-kK-X65"/>
+                                <include reference="nwo-cJ-m0a"/>
+                                <include reference="DuJ-Xa-WT7"/>
+                                <include reference="L48-dW-fGv"/>
                             </mask>
                         </variation>
                     </view>

@@ -16,12 +16,45 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="NU2-VV-IiA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="56" y="236" width="288" height="128"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28680333495140076" green="0.76699721813201904" blue="0.91361278295516968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NU2-VV-IiA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VDv-Dk-XOf"/>
+                            <constraint firstItem="NU2-VV-IiA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cjF-Dh-QWX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NU2-VV-IiA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="VDv-Dk-XOf"/>
+                                <exclude reference="cjF-Dh-QWX"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NU2-VV-IiA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="VDv-Dk-XOf"/>
+                                <include reference="cjF-Dh-QWX"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch" width="300" height="125"/>
+    </resources>
 </document>

@@ -15,8 +15,8 @@
 		7245C2C31C6EC048001B357B /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7245C2C21C6EC048001B357B /* Pitch_PerfectTests.swift */; };
 		7245C2CE1C6EC048001B357B /* Pitch_PerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7245C2CD1C6EC048001B357B /* Pitch_PerfectUITests.swift */; };
 		7245C2DC1C77FD6F001B357B /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7245C2DB1C77FD6F001B357B /* PlaySoundsViewController.swift */; };
-		7245C2E11C781318001B357B /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7245C2E01C781318001B357B /* movie_quote.mp3 */; };
 		7245C2E31C7A3B79001B357B /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7245C2E21C7A3B79001B357B /* RecordedAudio.swift */; };
+		72AD0C711C85F4B900824789 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72AD0C701C85F4B900824789 /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		7245C2CD1C6EC048001B357B /* Pitch_PerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectUITests.swift; sourceTree = "<group>"; };
 		7245C2CF1C6EC048001B357B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7245C2DB1C77FD6F001B357B /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
-		7245C2E01C781318001B357B /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../movie_quote.mp3; sourceTree = "<group>"; };
 		7245C2E21C7A3B79001B357B /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
+		72AD0C701C85F4B900824789 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = "../../Pitch Perfect - Resources/movie_quote.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,7 @@
 		7245C2DF1C7802EC001B357B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7245C2E01C781318001B357B /* movie_quote.mp3 */,
+				72AD0C701C85F4B900824789 /* movie_quote.mp3 */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 			files = (
 				7245C2B81C6EC048001B357B /* LaunchScreen.storyboard in Resources */,
 				7245C2B51C6EC048001B357B /* Assets.xcassets in Resources */,
-				7245C2E11C781318001B357B /* movie_quote.mp3 in Resources */,
+				72AD0C711C85F4B900824789 /* movie_quote.mp3 in Resources */,
 				7245C2B31C6EC048001B357B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +466,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dapp.Pitch-PerfectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_TARGET_NAME = "Pitch Perfect";
 				USES_XCTRUNNER = YES;
 			};
@@ -478,6 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dapp.Pitch-PerfectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_TARGET_NAME = "Pitch Perfect";
 				USES_XCTRUNNER = YES;
 			};
@@ -502,6 +504,7 @@
 				7245C2D41C6EC048001B357B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7245C2D51C6EC048001B357B /* Build configuration list for PBXNativeTarget "Pitch PerfectTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +513,7 @@
 				7245C2D71C6EC048001B357B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7245C2D81C6EC048001B357B /* Build configuration list for PBXNativeTarget "Pitch PerfectUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +522,7 @@
 				7245C2DA1C6EC048001B357B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
